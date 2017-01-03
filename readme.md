@@ -1,0 +1,1 @@
+Module for Joomla! 3.x which get articles from chosen category on your database.
