@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Last Article!</name>
+    <author>Pasquale Sacco</author>
+    <version>1.0.0</version>
+    <description>Last Article.</description>
+    <files>
+        <filename>mod_lastarticle.xml</filename>
+        <filename module="mod_lastarticle">mod_lastarticle.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+      <fields name="params">
+        <fieldset name="basic">
+
+            <field name="introduction_text"
+            type="text"
+            default="Ultime Notizie"
+            label="Testo di introduzione"
+            description="Testo di introduzione" />
+
+            <field name="category"
+            type="category"
+            extension="com_content"
+            published=""
+            label="Categoria"
+            description="Categoria da abbinare al modulo"/>
+
+            <field name="art_limit"
+            type="text"
+            default="2"
+            label="Limite Articoli da visualizzare"
+            description="Limite Articoli da visualizzare" />
+
+        </fieldset>
+
+      </fields>
+    </config>
+</extension>
